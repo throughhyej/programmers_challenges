@@ -17,7 +17,7 @@ public class Intervals_3 {
 
     class Solution {
         public long[] solution(int x, int n) {
-//            long[] answer = {};
+            // 이 때, int x로 인해 실패하는 경우가 있음 -> long 으로 변환하면 성공
             long[] answer = new long[n];
             for(int i=0; i<n; i++) {
                 answer[i] = (i+1) * x;
