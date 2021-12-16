@@ -20,9 +20,7 @@ public class Convert {
 
         private final String num;
         Matching(String str) { this.num = str; } // [IntelliJ] Modifier 'private' is redundant for enum constructors
-        public String getNum() {
-            return num;
-        }
+        public String getNum() { return num; }
     }
 
     public int converToNum(String str) {
