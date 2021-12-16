@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.level1.Convert;
 import com.company.level1.Lotto;
 import com.company.level1.ValidationId;
 
@@ -15,7 +16,9 @@ public class Main {
 //        int[] b = new int[] {31, 10, 45, 1, 6, 19}; // {38, 19, 20, 40, 15, 25}, {20, 9, 3, 45, 4, 35}, {31, 10, 45, 1, 6, 19}
 //        lotto.getLottosRanking(a, b);
 
-        new ValidationId().validation("=.=");
+//        new ValidationId().validation("=.=");
+
+        new Convert().converToNum("23four5six7");
 
     }
 }
