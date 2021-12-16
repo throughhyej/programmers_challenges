@@ -37,7 +37,7 @@ public class Convert {
                 strArry[0] = strArry[0].replaceAll(val, i.getNum());
             }
         }
-        
+
     /*
         Matching[] enumArry = Matching.values();
         String[] matchingArry = new String[enumArry.length];
