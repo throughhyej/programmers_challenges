@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.level1.Convert;
+import com.company.level1.Filtering;
 import com.company.level1.Lotto;
 import com.company.level1.ValidationId;
 
@@ -18,7 +19,9 @@ public class Main {
 
 //        new ValidationId().validation("=.=");
 
-        new Convert().converToNum("23four5six7");
+//        new Convert().converToNum("23four5six7");
 
+        int[] intArry = new int[] {1,2,3,4,6,7,8,0};
+        new Filtering().filter(intArry);
     }
 }
