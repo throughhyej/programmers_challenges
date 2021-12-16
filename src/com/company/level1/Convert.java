@@ -30,6 +30,16 @@ public class Convert {
         strArry[0] = str;
 
         Matching[] enumArry = Matching.values();
+        for (Matching i : enumArry) {
+            String val = String.valueOf(Matching.valueOf(i.toString()));
+
+            if (strArry[0].contains(val)) {
+                strArry[0] = strArry[0].replaceAll(val, i.getNum());
+            }
+        }
+        
+    /*
+        Matching[] enumArry = Matching.values();
         String[] matchingArry = new String[enumArry.length];
         //  String[] matchingArry = new String[] {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
         for (Matching i : enumArry) {
@@ -43,6 +53,7 @@ public class Convert {
                 strArry[0] = strArry[0].replaceAll(val, String.valueOf(Matching.valueOf(val).getNum()));
             }
         }
+     */
 
         System.out.println("#### > " + strArry[0]);
         return Integer.parseInt(strArry[0]);
