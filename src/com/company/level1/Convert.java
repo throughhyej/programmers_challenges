@@ -40,7 +40,7 @@ public class Convert {
 
         for (String val : matchingArry) {
             if (strArry[0].contains(val)) {
-                strArry[0] = strArry[0].replaceAll(val, String.valueOf(Matching.valueOf(val).num));
+                strArry[0] = strArry[0].replaceAll(val, String.valueOf(Matching.valueOf(val).getNum()));
             }
         }
 
