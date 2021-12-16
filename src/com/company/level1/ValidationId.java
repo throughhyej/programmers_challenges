@@ -4,7 +4,7 @@ public class ValidationId {
     /**
      * https://programmers.co.kr/learn/courses/30/lessons/72410?language=java
      * 신규 아이디 추천
-     * 메모리 생각하기, 정규식
+     * 메모리 생각하기, 정규식, enum 적용 가능한지 생각해보기
      **/
     public String validation(String new_id) {
         // new로 배열 생성 시, 길이 변경 가능, 다시 생성 및 초기화 가능
