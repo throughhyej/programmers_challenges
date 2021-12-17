@@ -45,7 +45,7 @@ public class Keypad {
                             if (leftRow > rightRow) left += leftRow;
                             if (leftRow < rightRow) right += rightRow;
                             if (leftColumn > rightColumn) left += leftColumn;
-                            if (leftColumn < rightColumn) left += rightColumn;
+                            if (leftColumn < rightColumn) right += rightColumn;
 
                             if (left > right) {
                                 result.append("R");
