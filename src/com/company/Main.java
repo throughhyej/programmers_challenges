@@ -1,14 +1,10 @@
 package com.company;
 
-import com.company.level1.Convert;
-import com.company.level1.Filtering;
-import com.company.level1.Lotto;
-import com.company.level1.ValidationId;
+import com.company.level1.*;
 
 public class Main {
     /* https://programmers.co.kr/learn/challenges */
     public static void main(String[] args) {
-        // write your code here
 //        Desc_8 runCode = new Desc_8();
 //        runCode.run(199201938);
 
@@ -21,7 +17,10 @@ public class Main {
 
 //        new Convert().converToNum("23four5six7");
 
-        int[] intArry = new int[] {1,2,3,4,6,7,8,0};
-        new Filtering().filter(intArry);
+//        int[] intArry = new int[] {1,2,3,4,6,7,8,0};
+//        new Filtering().filter(intArry);
+
+        int[] intArry = new int[] {1, 3, 4, 5, 8, 2, 1, 4, 5, 9, 5};
+        new Keypad().pressKeypad(intArry, "right");
     }
 }
