@@ -27,12 +27,10 @@ public class Keypad {
                         if (j == 0) {
                             result.append("L");
                             currentLeft[0] = i; currentLeft[1] = j;
-                            break;
                         }
                         else if (j == 2) {
                             result.append("R");
                             currentRight[0] = i; currentRight[1] = j;
-                            break;
                         }
                         else {
                             int left = 0;
@@ -67,8 +65,8 @@ public class Keypad {
                 }
             }
         }
-        System.out.println();
-        System.out.println("return > " + result.toString());
+//        System.out.println();
+//        System.out.println("return > " + result.toString());
         return result.toString();
     }
 }
