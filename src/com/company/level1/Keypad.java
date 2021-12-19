@@ -11,13 +11,19 @@ public class Keypad {
      **/
     public String pressKeypad(int[] numbers, String hand) {
         StringBuilder result = new StringBuilder();
-        String[][] keypad = {{"1", "2", "3"}, {"4", "5", "6"}, {"7", "8", "9"}, {"*", "0", "#"}};
+        String[][] keypad = {
+                  {"1", "2", "3"}
+                , {"4", "5", "6"}
+                , {"7", "8", "9"}
+                , {"*", "0", "#"}
+        };
 
         int[] currentLeft = new int[] {3, 0}; // 왼손 시작점 *
         int[] currentRight = new int[] {3, 2}; // 오른손 시작점 #
 
         for (int idx=0; idx<numbers.length; idx++) { // [IntelliJ] 'for' loop replaceable with enhanced 'for'
             String pressed = String.valueOf(numbers[idx]);
+            if (!pressed.matches("[0-9]")) continue;
 //            System.out.print("> " + pressed + "\t");
             for (int i=0; i<keypad.length; i++) {
                 for (int j=0; j<keypad[i].length; j++) {
@@ -40,10 +46,9 @@ public class Keypad {
                             int rightRow = Math.abs(i - currentRight[0]);
                             int rightColumn = Math.abs(j - currentRight[1]);
 
-                            if (leftRow > rightRow) left += leftRow;
-                            if (leftRow < rightRow) right += rightRow;
-                            if (leftColumn > rightColumn) left += leftColumn;
-                            if (leftColumn < rightColumn) right += rightColumn;
+                            // 이동 총 거리 체크 후 비교로 수정
+                            left = leftRow + leftColumn;
+                            right = rightRow + rightColumn;
 
                             if (left > right) {
                                 result.append("R");
@@ -65,8 +70,8 @@ public class Keypad {
                 }
             }
         }
-//        System.out.println();
-//        System.out.println("return > " + result.toString());
+        System.out.println();
+        System.out.println("return > " + result.toString());
         return result.toString();
     }
 }
