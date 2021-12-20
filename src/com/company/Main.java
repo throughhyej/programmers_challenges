@@ -20,7 +20,9 @@ public class Main {
 //        int[] intArry = new int[] {1,2,3,4,6,7,8,0};
 //        new Filtering().filter(intArry);
 
-        int[] intArry = new int[] {4, 3, 2, 8};
-        new Keypad().pressKeypad(intArry, "right");
+//        int[] intArry = new int[] {4, 3, 2, 8};
+//        new Keypad().pressKeypad(intArry, "right");
+
+        new Finder().findNum(12);
     }
 }
