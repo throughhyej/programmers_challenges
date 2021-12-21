@@ -23,6 +23,10 @@ public class Main {
 //        int[] intArry = new int[] {4, 3, 2, 8};
 //        new Keypad().pressKeypad(intArry, "right");
 
-        new Finder().findNum(12);
+//        new Finder().findNum(12);
+        int[] array = {1, 5, 2, 6, 3, 7, 4};
+        int[][] commands = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
+        new KFinder().findK(array, commands);
+
     }
 }
