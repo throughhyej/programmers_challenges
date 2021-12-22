@@ -24,9 +24,14 @@ public class Main {
 //        new Keypad().pressKeypad(intArry, "right");
 
 //        new Finder().findNum(12);
-        int[] array = {1, 5, 2, 6, 3, 7, 4};
-        int[][] commands = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
-        new KFinder().findK(array, commands);
+
+//        int[] array = {1, 5, 2, 6, 3, 7, 4};
+//        int[][] commands = {{2, 5, 3}, {4, 4, 1}, {1, 7, 3}};
+//        new KFinder().findK(array, commands);
+
+        int[] array = {1,2,7,6,4};
+//        int[] array = {1,2,3,4};
+        new PrimeNumber().getPrimeNumberCases(array);
 
     }
 }
